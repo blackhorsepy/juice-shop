@@ -260,7 +260,8 @@ const routes: Routes = [
   },
   { // vuln-code-snippet neutral-line tokenSaleChallenge
     matcher: tokenMatcher, // vuln-code-snippet vuln-line tokenSaleChallenge
-    component: TokenSaleComponent // vuln-code-snippet neutral-line tokenSaleChallenge
+    component: TokenSaleComponent, // vuln-code-snippet neutral-line tokenSaleChallenge
+    canActivate: [LoginGuard]
   }, // vuln-code-snippet neutral-line tokenSaleChallenge
   {
     path: 'coding-challenge/:challengeKey',
